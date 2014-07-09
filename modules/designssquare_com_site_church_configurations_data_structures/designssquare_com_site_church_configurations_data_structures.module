@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DesignsSquare.com: Site: Church: Configurations & Data Structures feature.
+ */
+
+include_once 'designssquare_com_site_church_configurations_data_structures.features.inc';

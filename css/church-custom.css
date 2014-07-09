@@ -1,0 +1,100 @@
+.par-macitaju img{
+    margin: 0 0 0 5px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    height: 81px;
+    width: 122px;
+}
+
+.flexslider{
+  margin-bottom: 10px;
+}
+
+.module{
+    padding-bottom: 10px;
+}
+
+.muted {
+    color: #999999;
+}
+
+body{
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#header .navigation li {
+    font-size: 17px;
+}
+
+.no-border{
+    display:none;
+}
+
+/*********Calendar*******/
+.calendar-event .field{
+    margin-bottom: 20px;
+}
+
+.calendar-event .field-label{
+    color: #999999;
+    font-weight: 700;
+}
+
+.view .date-nav-wrapper .date-prev, .view .date-nav-wrapper .date-next {
+    background-color: transparent;
+}
+
+.view .date-nav-wrapper .date-prev{
+    margin-right: 20px;
+}
+
+.calendar-calendar tr{
+    background-color: transparent;
+}
+
+.calendar-calendar td.empty{
+    background-color: transparent;
+}
+
+.calendar-calendar .month-view .full td.single-day .calendar-empty, .calendar-calendar .month-view .full td.single-day.empty, .calendar-calendar .month-view .full td.date-box.empty{
+    background-color: transparent;
+}
+
+.calendar .field-content a{
+   color: #777;
+}
+
+.calendar-calendar td .inner div.day a {
+    color: white;
+}
+
+.calendar-calendar .week-view #multi-day-container, .calendar-calendar .week-view #single-day-container, .calendar-calendar .day-view #multi-day-container, .calendar-calendar .day-view #single-day-container {
+     background-color: transparent;
+}
+
+.calendar-calendar div.calendar{
+    background-color: transparent;
+}
+
+.calendar-calendar table.mini td.empty{
+    background-color: transparent;
+}
+
+.calendar-calendar .mini-day-on{
+    background-color: #777;
+}
+
+.calendar-calendar tr td.today, .calendar-calendar tr.odd td.today, .calendar-calendar tr.even td.today {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*.view .date-nav-wrapper .date-next {*/
+    /*background-color: transparent;*/
+/*}*/

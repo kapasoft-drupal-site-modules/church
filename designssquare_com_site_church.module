@@ -1,0 +1,149 @@
+<?php
+
+
+
+//function designssquare_com_site_church_preprocess_block(&$vars)
+//{
+//
+//}
+
+//block-views-church-gallery-teaser-teaser
+function designssquare_com_site_church_preprocess_block(&$vars){
+    switch($vars['block_html_id']){
+        case 'block-views-church-gallery-teaser-teaser':
+        case 'block-views-church-newsletter-teaser-teaser':
+        case 'block-views-ds-church-podcast-t-teaser':
+        case 'block-views-ds-chruch-podcast-b-spredikis':
+        case 'block-views-ds-chruch-newsletter-b-block':
+        case 'block-views-ds-church-gallery-b-block':
+        case 'block-views-blog-church-slider-slider':
+        case 'block-views-calendar-notikumi':
+        case 'block-views-ds-church-recent-posts-b-ver1':
+        case 'block-views-ds-church-blog-categories-b-cat':
+        case 'block-views-ds-church-blog-tags-tag':
+        case 'block-views-ds-church-newsletter-all-all':
+            $vars['theme_hook_suggestions'][] = 'block__no_wrapper';
+            break;
+        case 'block-views-calendar-block-1':
+            $vars['classes_array'][] = 'widget';
+            break;
+    }
+}
+
+function designssquare_com_site_church_ds_block_context_alter(&$context, $block_id){
+    switch($block_id){
+        case 'ds_about':
+            $context['classes_array'][] = 'par-macitaju';
+            break;
+        case 'spredikis':
+            $context['classes_array'][] = 'podcast-block';
+    }
+}
+
+function designssquare_com_site_church_preprocess_page(&$vars){
+    drupal_add_css(drupal_get_path('module', 'designssquare_com_site_church') .'/css/church-custom.css', array('type' => 'file', 'group' => (CSS_THEME + 4), 'weight' => 10));
+
+    if(!empty($vars['node'])){
+        $node = $vars['node'];
+
+        switch($node->type){
+            case 'event':
+//                $vars['classes_array'][] = 'calendar-event';
+                $vars['theme_hook_suggestions'][] = 'page__event';
+                break;
+        }
+    }
+}
+
+function designssquare_com_site_church_css_alter(&$css){
+    //remove default fonts since no latvian lang supported
+    $path = 'http://fonts.googleapis.com/css?family=Oswald:400,700';
+    unset($css[$path]);
+}
+
+function designssquare_com_site_church_block__ds_announcement_alter(&$path_to_template){
+    $path_to_template = drupal_get_path('module', 'designssquare_com_site_church').'/templates';
+}
+
+function designssquare_com_site_church_contact_tapi_alter(&$contact_tapi){
+    $contact_tapi['email_label'] = 'tavs ē-pasts';
+    $contact_tapi['message_label'] = 'vēstule';
+    $contact_tapi['name_label'] = 'tavs vārds';
+    $contact_tapi['subject_type'] = 'hidden';
+    $contact_tapi['subject_label'] = '';
+    $contact_tapi['submit_label'] = 'sūtī†';
+}
+
+function designssquare_com_site_church_newsletter_teaser_tapi_alter(&$newsletter_teaser_tapi){
+    $newsletter_teaser_tapi['download']['text'] = 'Turpināt lasī†';
+}
+
+function designssquare_com_site_church_blog_entry_tapi_alter(&$blog_entry_tapi){
+    $blog_entry_tapi['botton_label'] = 'Turpināt lasī†';
+}
+
+//function designssquare_com_site_loam_node_presave($node) {
+//fix  for loam sample data import where 'display' is striped away for field_broshure causing db syntax error at node_save
+//    if ($node->type == 'about' && isset($node->field_broshure['und'][0])) {
+//            $node->field_broshure['und'][0]['display'] = 1;
+//    }
+//}
+
+//adding page__event tempalate
+function designssquare_com_site_church_theme_registry_alter(&$theme_registry) {
+    //make local templates available
+    $path  = drupal_get_path('module', 'designssquare_com_site_church').'/templates/theme';
+    $registry_entries = drupal_find_theme_templates($theme_registry, '.tpl.php', $path);
+    //to avoid error message adding 'type'
+    foreach($registry_entries as $key => $entry){
+        $registry_entries[$key]['type'] = 'module';
+        $registry_entries[$key]['theme path'] = $path;
+    }
+    $theme_registry += $registry_entries;
+}
+
+function designssquare_com_site_church_preprocess_views_view(&$vars)
+{
+
+    $vars['ds_contextual_links'] = view_contextual_links($vars['view']);
+
+    $tag_list = drupal_explode_tags($vars['view']->tag);
+    $view = $vars['view'];
+
+    //handling title
+    $display_id = $view->current_display;
+    $vars['views_title'] = (isset($display_id) && isset($view->display[$display_id])) ? $view->display[$display_id]->display_title : '';
+
+    if ($display_id == 'notikumi') {
+        $vars['theme_hook_suggestion'] = 'views_view__block_notikumi';
+    }
+}
+
+function designssquare_com_site_church_preprocess_views_view_list(&$vars)
+{
+//    $tag_list = drupal_explode_tags($vars['view']->tag);
+    $display_id = $vars['view']->current_display;
+    if ($display_id == 'notikumi') {
+        _event_view_list($vars);
+        $vars['theme_hook_suggestion'] = 'views_view_list__block_notikumi';
+    }
+}
+
+function designssquare_com_site_church_preprocess_views_view_unformatted(&$vars)
+{
+    $tag_list = drupal_explode_tags($vars['view']->tag);
+
+    $display_id = $vars['view']->current_display;
+    if ($display_id == 'notikumi') {
+//        _newsletter_view_list($vars);
+        $vars['theme_hook_suggestion'] = 'views_view_list__block_notikumi';
+    }
+}
+
+function _event_view_list(&$vars)
+{
+    foreach ($vars['view']->result as $id => $row) {
+        $event = $row->_field_data['nid']['entity'];
+        $row->event = _event_teaser_tapi($event);
+    }
+}

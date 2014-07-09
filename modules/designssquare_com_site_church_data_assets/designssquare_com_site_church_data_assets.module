@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DesignsSquare.com: Site: Church: Data & Assets feature.
+ */
+
+include_once 'designssquare_com_site_church_data_assets.features.inc';
