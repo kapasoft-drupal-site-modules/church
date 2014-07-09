@@ -5,8 +5,8 @@ version = 0.2
 project = designssquare_com_site_church
 package = DesignsSquare.com.site.church
 
-;dependencies[] = designssquare_com_site_loam_structure
-ldependencies[] = designssquare_lib
+dependencies[] = designssquare_com_site_church_configurations_data_structures
+dependencies[] = designssquare_lib
 ;dependencies[] = designssquare_lib_assets
 ;dependencies[] = designssquare_alias_path
 ;dependencies[] = calendar
