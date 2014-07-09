@@ -1,7 +1,7 @@
 name = DesignsSquare.com: Site: Church: Data & Assets
 description = data for site church
 core = 7.x
-package = designssquare.com.site.church
+package = DesignsSquare.com.site.church
 version = 7.x-1.0
 project = designssquare_com_site_church_data_assets
 dependencies[] = designssquare_lib_sample_data

@@ -22,7 +22,7 @@ function designssquare_com_site_church_configurations_data_structures_strongarm(
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ds_about__content_block__image';
-  $strongarm->value = '129';
+  $strongarm->value = '197';
   $export['ds_about__content_block__image'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -124,6 +124,20 @@ function designssquare_com_site_church_configurations_data_structures_strongarm(
   $strongarm->name = 'site_frontpage';
   $strongarm->value = 'node/3';
   $export['site_frontpage'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'site_mail';
+  $strongarm->value = 'admin@example.com';
+  $export['site_mail'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'theme_default';
+  $strongarm->value = 'espresso';
+  $export['theme_default'] = $strongarm;
 
   return $export;
 }
