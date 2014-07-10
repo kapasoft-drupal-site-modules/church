@@ -751,3 +751,118 @@ function designssquare_com_site_church_configurations_data_structures_node_info(
   );
   return $items;
 }
+
+/**
+ * Implements hook_strongarm_override_default_settings().
+ */
+function designssquare_com_site_church_configurations_data_structures_strongarm_override_default_settings() {
+$strongarm_override = array();
+
+$strongarm_override[] = array(
+  'name' => 'site_403',
+  'value' => '',
+);
+$strongarm_override[] = array(
+  'name' => 'site_404',
+  'value' => '',
+);
+$strongarm_override[] = array(
+  'name' => 'site_frontpage',
+  'value' => 'sākums-latviesu-organizāciju-apvieniba-minesotā',
+);
+$strongarm_override[] = array(
+  'name' => 'site_name',
+  'value' => 'Latviešu Draudze Dvīņu Pilsētās',
+);
+$strongarm_override[] = array(
+  'name' => 'site_slogan',
+  'value' => 'Minneapoles - St.Paulas evaņģēliski luteriskā latviešu draudze',
+);
+$strongarm_override[] = array(
+  'name' => 'theme_espresso_settings',
+  'value' => array(
+    'toggle_logo' => 0,
+    'toggle_name' => 1,
+    'toggle_slogan' => 1,
+    'toggle_node_user_picture' => 1,
+    'toggle_comment_user_picture' => 1,
+    'toggle_comment_user_verification' => 1,
+    'toggle_favicon' => 1,
+    'toggle_main_menu' => 1,
+    'toggle_secondary_menu' => 1,
+    'default_logo' => 0,
+    'logo_path' => '',
+    'logo_upload' => '',
+    'default_favicon' => 1,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+    'general__active_tab' => 'edit-theme-settings',
+    'bootstrap__active_tab' => 'edit-components',
+    'bootstrap_breadcrumb' => 1,
+    'bootstrap_breadcrumb_home' => 1,
+    'bootstrap_breadcrumb_title' => 1,
+    'bootstrap_navbar_position' => '',
+    'bootstrap_navbar_inverse' => 0,
+    'bootstrap_region_well-navigation' => '',
+    'bootstrap_region_well-header' => '',
+    'bootstrap_region_well-page_header' => '',
+    'bootstrap_region_well-highlighted' => '',
+    'bootstrap_region_well-help' => '',
+    'bootstrap_region_well-content' => '',
+    'bootstrap_region_well-sidebar_first' => 'well',
+    'bootstrap_region_well-sidebar_second' => '',
+    'bootstrap_region_well-footer' => '',
+    'bootstrap_region_well-page_top' => '',
+    'bootstrap_region_well-page_bottom' => '',
+    'bootstrap_region_well-row_one' => '',
+    'bootstrap_region_well-row_two' => '',
+    'bootstrap_region_well-row_three' => '',
+    'bootstrap_region_well-footer_navigation' => '',
+    'bootstrap_region_well-dashboard_main' => '',
+    'bootstrap_region_well-dashboard_sidebar' => '',
+    'bootstrap_region_well-dashboard_inactive' => '',
+    'bootstrap_anchors_fix' => 1,
+    'bootstrap_anchors_smooth_scrolling' => 1,
+    'bootstrap_popover_enabled' => 1,
+    'bootstrap_popover_animation' => 1,
+    'bootstrap_popover_html' => 0,
+    'bootstrap_popover_placement' => 'right',
+    'bootstrap_popover_selector' => '',
+    'bootstrap_popover_trigger' => array(
+      'click' => 'click',
+      'hover' => 0,
+      'focus' => 0,
+      'manual' => 0,
+    ),
+    'bootstrap_popover_title' => '',
+    'bootstrap_popover_content' => '',
+    'bootstrap_popover_delay' => 0,
+    'bootstrap_popover_container' => 'body',
+    'bootstrap_tooltip_enabled' => 1,
+    'bootstrap_tooltip_descriptions' => 1,
+    'bootstrap_tooltip_animation' => 1,
+    'bootstrap_tooltip_html' => 0,
+    'bootstrap_tooltip_placement' => 'auto left',
+    'bootstrap_tooltip_selector' => '',
+    'bootstrap_tooltip_trigger' => array(
+      'hover' => 'hover',
+      'focus' => 'focus',
+      'click' => 0,
+      'manual' => 0,
+    ),
+    'bootstrap_tooltip_delay' => 0,
+    'bootstrap_tooltip_container' => 'body',
+    'bootstrap_cdn' => '',
+    'bootstrap_bootswatch' => '',
+    'bootstrap_rebuild_registry' => 0,
+    'bootstrap_toggle_jquery_error' => 0,
+    'espresso__active_tab' => 'edit-backgrounds',
+    'espresso_layout' => NULL,
+    'espresso_color_scheme' => 'blue',
+    'ds_theme_predefined_background' => '010',
+    'ds_custom_bg_enabled' => 1,
+    'ds_theme_custom_background' => 199,
+  ),
+);
+return $strongarm_override;
+}
