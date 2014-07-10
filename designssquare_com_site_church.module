@@ -142,6 +142,7 @@ function designssquare_com_site_church_preprocess_views_view_unformatted(&$vars)
 
 function _event_view_list(&$vars)
 {
+    module_load_include('inc', 'designssquare_lib', 'includes/template_api');
     foreach ($vars['view']->result as $id => $row) {
         $event = $row->_field_data['nid']['entity'];
         $row->event = _event_teaser_tapi($event);
