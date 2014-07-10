@@ -759,18 +759,6 @@ function designssquare_com_site_church_configurations_data_structures_strongarm_
 $strongarm_override = array();
 
 $strongarm_override[] = array(
-  'name' => 'site_403',
-  'value' => '',
-);
-$strongarm_override[] = array(
-  'name' => 'site_404',
-  'value' => '',
-);
-$strongarm_override[] = array(
-  'name' => 'site_frontpage',
-  'value' => 'sākums-latviesu-organizāciju-apvieniba-minesotā',
-);
-$strongarm_override[] = array(
   'name' => 'site_name',
   'value' => 'Latviešu Draudze Dvīņu Pilsētās',
 );

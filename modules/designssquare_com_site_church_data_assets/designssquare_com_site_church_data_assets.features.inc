@@ -862,48 +862,22 @@ return $menu_alias;
 }
 
 /**
- * Implements hook_variable_assets_default_settings().
+ * Implements hook_strongarm_override_default_settings().
  */
-function designssquare_com_site_church_data_assets_variable_assets_default_settings() {
-$variable_assets = array();
+function designssquare_com_site_church_data_assets_strongarm_override_default_settings() {
+$strongarm_override = array();
 
-$variable_assets = array(
-  'ds_about__content_block__image' => array(
-    'fid' => 197,
-    'uid' => 1,
-    'filename' => '09_2010_DagsunEdija.jpg',
-    'uri' => 'public://designssquare_com_theme_blocks/assets/img/09_2010_DagsunEdija.jpg',
-    'filemime' => 'image/jpeg',
-    'filesize' => 403372,
-    'status' => 1,
-    'timestamp' => 1404860078,
-    'type' => 'image',
-    'uuid' => '3bfa8eb0-11b6-4472-802c-4e2c2f7a01d3',
-    'rdf_mapping' => array(),
-    'image_dimensions' => array(
-      'width' => 2352,
-      'height' => 1568,
-    ),
-  ),
+$strongarm_override[] = array(
+  'name' => 'site_403',
+  'value' => '',
 );
-$variable_assets = array(
-  'ds_theme_custom_background' => array(
-    'fid' => 199,
-    'uid' => 1,
-    'filename' => '010_v2.jpg',
-    'uri' => 'public://designssquare_com/theme/espresso/theme-settings/010_v2_0.jpg',
-    'filemime' => 'image/jpeg',
-    'filesize' => 437413,
-    'status' => 1,
-    'timestamp' => 1404870547,
-    'type' => 'image',
-    'uuid' => '46e98433-11e4-48d8-a3b3-bde453428f0d',
-    'rdf_mapping' => array(),
-    'image_dimensions' => array(
-      'width' => 1600,
-      'height' => 1066,
-    ),
-  ),
+$strongarm_override[] = array(
+  'name' => 'site_404',
+  'value' => '',
 );
-return $variable_assets;
+$strongarm_override[] = array(
+  'name' => 'site_frontpage',
+  'value' => 'sākums-latviesu-organizāciju-apvieniba-minesotā',
+);
+return $strongarm_override;
 }
