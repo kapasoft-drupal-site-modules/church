@@ -4031,6 +4031,88 @@ function designssquare_com_site_church_data_assets_uuid_features_default_content
 );
   $nodes[] = array(
   'uid' => 1,
+  'title' => 'Home',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '88c7eaf8-8711-4148-b4a6-aedf6d3cc094',
+  'type' => 'home',
+  'language' => 'und',
+  'created' => 1400986010,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => 'ea3ca5f4-7c46-4038-8fcf-11996796c79a',
+  'revision_uid' => 1,
+  'body' => array(),
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 1,
+  'comment_count' => 0,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'b:0;',
+  'date' => '2014-05-25 02:46:50 +0000',
+  'alias_url' => 'sākums-latviesu-draudze-minesotā',
+);
+  $nodes[] = array(
+  'uid' => 1,
   'title' => '2013. g. novembris',
   'log' => '',
   'status' => 1,

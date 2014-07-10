@@ -413,10 +413,10 @@ $menu_alias = array(
       'description' => 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.',
     ),
     'links' => array(
-      'sākums-latviesu-organizāciju-apvieniba-minesotā' => array(
+      'sākums-latviesu-draudze-minesotā' => array(
         'menu_name' => 'main-menu',
         'plid' => 0,
-        'link_path' => 'sākums-latviesu-organizāciju-apvieniba-minesotā',
+        'link_path' => 'sākums-latviesu-draudze-minesotā',
         'link_title' => 'Sākums',
         'options' => array(
           'attributes' => array(),
@@ -429,7 +429,7 @@ $menu_alias = array(
         'weight' => 0,
         'depth' => 1,
         'customized' => 1,
-        'p1' => 'sākums-latviesu-organizāciju-apvieniba-minesotā',
+        'p1' => 'sākums-latviesu-draudze-minesotā',
         'p2' => 0,
         'p3' => 0,
         'p4' => 0,
@@ -869,15 +869,15 @@ $strongarm_override = array();
 
 $strongarm_override[] = array(
   'name' => 'site_403',
-  'value' => '',
+  'value' => 'sākums-latviesu-draudze-minesotā',
 );
 $strongarm_override[] = array(
   'name' => 'site_404',
-  'value' => '',
+  'value' => 'sākums-latviesu-draudze-minesotā',
 );
 $strongarm_override[] = array(
   'name' => 'site_frontpage',
-  'value' => 'sākums-latviesu-organizāciju-apvieniba-minesotā',
+  'value' => 'sākums-latviesu-draudze-minesotā',
 );
 return $strongarm_override;
 }
