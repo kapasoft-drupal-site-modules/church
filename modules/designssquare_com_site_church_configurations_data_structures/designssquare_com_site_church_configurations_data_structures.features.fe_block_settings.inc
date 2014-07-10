@@ -50,6 +50,82 @@ function designssquare_com_site_church_configurations_data_structures_default_fe
     'visibility' => 0,
   );
 
+  $export['views-calendar-block_1'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'calendar-block_1',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'bootstrap' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bootstrap',
+        'weight' => 0,
+      ),
+      'espresso' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'espresso',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-calendar-notikumi'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'calendar-notikumi',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'bootstrap' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bootstrap',
+        'weight' => 0,
+      ),
+      'espresso' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'espresso',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['views-church_gallery_teaser-teaser'] = array(
     'cache' => -1,
     'custom' => 0,
