@@ -25,15 +25,6 @@ function designssquare_com_site_church_configurations_data_structures_filter_def
           'filter_url_length' => 72,
         ),
       ),
-      'filter_html' => array(
-        'weight' => 1,
-        'status' => 1,
-        'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd>',
-          'filter_html_help' => 1,
-          'filter_html_nofollow' => 0,
-        ),
-      ),
       'filter_autop' => array(
         'weight' => 2,
         'status' => 1,

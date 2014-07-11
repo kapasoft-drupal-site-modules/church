@@ -12,6 +12,87 @@ function designssquare_com_site_church_data_assets_uuid_features_default_content
 
   $nodes[] = array(
   'uid' => 1,
+  'title' => 'Svētrīta Zvani Indeks',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => 'b5ab9d0e-13ad-492d-94a9-2a667948a8f9',
+  'type' => 'ds_newsletter_index',
+  'language' => 'und',
+  'created' => 1405117246,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => '0c91fd07-1bb4-4e8f-b47b-143e90569f80',
+  'revision_uid' => 1,
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 1,
+  'comment_count' => 0,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'b:0;',
+  'date' => '2014-07-11 22:20:46 +0000',
+  'alias_url' => 'mn-draudzes-svētrīta-zvani-indeks',
+);
+  $nodes[] = array(
+  'uid' => 1,
   'title' => '2014. g. marts',
   'log' => '',
   'status' => 1,
@@ -2119,6 +2200,87 @@ function designssquare_com_site_church_data_assets_uuid_features_default_content
 );
   $nodes[] = array(
   'uid' => 1,
+  'title' => 'Latviešu Baznīzas Galerijas Indeks',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => 'aa39ae5c-762e-4a1d-922c-7a4cdc30e99f',
+  'type' => 'ds_gallery_index',
+  'language' => 'und',
+  'created' => 1405117188,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => '886f2b25-67e8-4440-9c81-825e17900838',
+  'revision_uid' => 1,
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 1,
+  'comment_count' => 0,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'b:0;',
+  'date' => '2014-07-11 22:19:48 +0000',
+  'alias_url' => 'latviešu-baznīca-minesotā-foto-galerija',
+);
+  $nodes[] = array(
+  'uid' => 1,
   'title' => 'Pirmais Augsts',
   'log' => '',
   'status' => 1,
@@ -2140,7 +2302,7 @@ function designssquare_com_site_church_data_assets_uuid_features_default_content
 ',
         'summary' => '',
         'format' => 'filtered_html',
-        'safe_value' => '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        'safe_value' => '<p><span style="color: rgba(255, 255, 255, 0.901961); font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif; font-size: 11px; line-height: 15.714285850524902px; background-color: rgba(255, 255, 255, 0.298039);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span></p>
 ',
         'safe_summary' => '',
       ),
@@ -2539,14 +2701,21 @@ function designssquare_com_site_church_data_assets_uuid_features_default_content
 ',
         'summary' => '',
         'format' => 'filtered_html',
-        'safe_value' => '<p>Bibliotēka ir atvērta katra mēneša pirmajā svētdienā, vienu stundu pirms un pusstundu pēc dievkalpojuma, tas ir. : 9:00 – 10:00 un apm. 11:30 – 12:00 (pēc Lieldienām); 10:00 – 11:00 un 12:30 – 1:00 pp. (sākot ar pirmo Adventu līdz Lieldienām).</p>
+        'safe_value' => '<div class="span4">
+<p>Bibliotēka ir atvērta katra mēneša pirmajā svētdienā, vienu stundu pirms un pusstundu pēc dievkalpojuma, tas ir. : 9:00 – 10:00 un apm. 11:30 – 12:00 (pēc Lieldienām); 10:00 – 11:00 un 12:30 – 1:00 pp. (sākot ar pirmo Adventu līdz Lieldienām).</p>
 <p>Draudzes locekļi vai citi, kam interesētu apskatīt vai lietot bibliotēkas grāmatas, var arī sarunāt citu laiku, zvanot draudzes bibliotēkārēm Annai Lindemanei-Hobbs 651 653-7301 vai Birutai Andersonei-Sprūds 651 636-0473</p>
 <p>Pavasaŗa un Ziemassvētku tirdziņos bibliotēkāres pārdod jaunas un arī lietotas grāmatas, arī mūzikas tvartus (CD), video filmas, apsveikuma kartiņas, latviskus lipekļus / uzlīmes, u.c.</p>
+</div>
+<div class="span4">
 <p>Jaunās grāmatas iegādājamies no ALAs, LELBAs un citiem apgādiem Amerikā, kā arī no vairākām grāmatnīcām Latvijā un Kanadā. Cilvēki, kam būtu interese, var ieteikt bibliotēkai vēlamo grāmatu nosaukumus.</p>
 <p>Vairākas reizes gadā sūtām grāmatas uz Latviju, lietojot Latvian American Shipping Line pakalpojumus. Lielāko tiesu tās ir bibliotēkai saziedotas grāmatas, likvidējot personīgās māju bibliotēkas. Ir labi, ja ziedotāji pievieno kādu naudas summu sūtīšanas izdevumiem. Grāmatas sūtām Latvijas Nacionālās bibliotēkas sadales punktam (kur tās var saņemt Latvijas lauku bibliotēkas), Rakstniecības, teātŗa un mūzikas muzejam, arī Rīgas dizaina un mākslas vidusskolai, Lielvārdes grāmatu klētij, kā arī vairākām citām bibliotekām.</p>
+</div>
+<div class="span4">
 <ul class="thumbnails"><li class="span4">
+<div class="thumbnail"><img alt="" src="sites/all/themes/latvianchurch/images/biblioteka/b_pic1.jpg" /></div>
 </li>
-</ul>',
+</ul></div>
+',
         'safe_summary' => '',
       ),
     ),
@@ -2839,7 +3008,7 @@ function designssquare_com_site_church_data_assets_uuid_features_default_content
 ',
         'summary' => '',
         'format' => 'filtered_html',
-        'safe_value' => '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        'safe_value' => '<p><span style="color: rgba(255, 255, 255, 0.901961); font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif; font-size: 11px; line-height: 15.714285850524902px; background-color: rgba(255, 255, 255, 0.298039);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span></p>
 ',
         'safe_summary' => '',
       ),
@@ -3175,8 +3344,8 @@ function designssquare_com_site_church_data_assets_uuid_features_default_content
 <p>Un tagad, pēc apmēram 8 gadiem, ar Dieva palīgu un vadību Dāgs ir Dieva draudzes, Mineapoles - St. Paulas draudzes gans. Kopš 2008. gada Dāgs kalpoja kā ordinēts diakons, bet pavisam nesen, šī gada 3. martā, viņš tika ordinēts mācītāja amatā. Simboliski, ka ordinācija notika Floridā, netālu no Tampas, pavalstī, kur tika pavadīti Dāga pirmie dzīves gadi. Vasarā Dāgs pabeigs studijas maģistra grādā, kad iegūs Master of Divinity. Pašlaik viņš ņem pēdējo kursu Luther Seminary St. Paulā. Ar lielu prieku un lielu paļaušanos uz Dievu Dāgs ir uzsācis jaunu ceļu, ar Mineapoles draudzi kopīgi vienā solī staigājot.</p>
 ',
         'summary' => '',
-        'format' => 'filtered_html',
-        'safe_value' => '<p>Pēc trīs mēnešiem, ko esam pavadījuši mūsu jaunajās mājās, Mineapolē, nu varam teikt, ka daudz ir redzēts, daudz ir darīts un līdz ar to arī daudz ir iepazīts. Cilvēki draudzē un ārpus tās, pilsēta kā dienā, tā arī naktī. Un ja padomā, vēl daudz jaunā un nezināmā mums ir priekšā. Mēs cenšamies iepazīt draudzes cilvēkus, cik labi vien to spējam, bet rodas jautājums, vai tu esi paspējis iepazīt mūs? Iepazīsimies!</p>
+        'format' => 'full_html',
+        'safe_value' => '<p>Pēc trīs mēnešiem, ko esam pavadījuši mūsu jaunajās mājās, Mineapolē, nu varam teikt, ka daudz ir redzēts, daudz ir darīts un līdz ar to arī daudz ir iepazīts. Cilvēki draudzē un ārpus tās, pilsēta kā dienā, tā arī naktī. Un ja padomā, vēl daudz jaunā un nezināmā mums ir priekšā. Mēs cenšamies iepazīt draudzes cilvēkus, cik labi vien to spējam, bet rodas jautājums, vai tu esi paspējis iepazīt mūs? Iepazīsimies!<img alt="09_2010_DagsunEdija.jpg" class="thumbnail" height="167" src="/sites/default/files/09_2010_DagsunEdija.jpg" style="float:right" width="250" /></p>
 <p>Mācītājs Dāgs, ar vidējo vārdu Aleksanders, ir dzimis 1976. gada 15. septembrī Ņujorkas pilsētā, Bruklinā. Ar trīs dienu vecumu viņš tika adoptēts vienā trimdas latviešu ģimenē, kur uzaudzis mammas, Māras Valdmanes, vecmammas un trīs vecmammas māsu gādībā. Pirmos trīs Dāga dzīves gadus ģimene dzīvoja Miami. Tad pārvācās uz Montreālu, Kanādā, kur ģimene bija dzīvojusi jau agrāk dzīvē. Dāgs ģimenē bija vienīgais bērns, tāpēc par uzmanības trūkumu sūdzēties nevarēja, īpaši, kad viņam divu vecmammu vietā bija veselas četras. Bērnībā Dāgam ļoti patika dzīvnieki, viņš rūpējās par kaķi Minnīti, kanārijputniņu Cherpy, zelta zivtiņu Ābrahāmu un bruņurupuci Gaiziņu. Viens no Dāga pirmajiem darbiem bija avīžu iznēsāšana vietējā rajonā. Pirmais grāds Dāgam ir tūrisma laukā, viņš strādāja Eurail firmā, kur pārdeva ekskursijas ar vilcienu pa Eiropu. Vēlāk dzīvē Dāgs palēnām juta, ka Kāds viņu aicina vienā citā kalpošanā. Tas bija aicinājums no Dieva. Vadot savu pirmo svētbrīdi 2004. gada 18. novembrī, viņš vēl nebija ņēmis nevienu kursu teoloģijā. Tas bija liels izaicinājums.</p>
 <p>Un tagad, pēc apmēram 8 gadiem, ar Dieva palīgu un vadību Dāgs ir Dieva draudzes, Mineapoles - St. Paulas draudzes gans. Kopš 2008. gada Dāgs kalpoja kā ordinēts diakons, bet pavisam nesen, šī gada 3. martā, viņš tika ordinēts mācītāja amatā. Simboliski, ka ordinācija notika Floridā, netālu no Tampas, pavalstī, kur tika pavadīti Dāga pirmie dzīves gadi. Vasarā Dāgs pabeigs studijas maģistra grādā, kad iegūs Master of Divinity. Pašlaik viņš ņem pēdējo kursu Luther Seminary St. Paulā. Ar lielu prieku un lielu paļaušanos uz Dievu Dāgs ir uzsācis jaunu ceļu, ar Mineapoles draudzi kopīgi vienā solī staigājot.</p>
 ',
@@ -4113,6 +4282,87 @@ function designssquare_com_site_church_data_assets_uuid_features_default_content
 );
   $nodes[] = array(
   'uid' => 1,
+  'title' => 'Podcast Index',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '03c30bdd-3402-4096-b3e1-58c459f32082',
+  'type' => 'ds_podcast_index',
+  'language' => 'und',
+  'created' => 1403701361,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => 'ea7c388d-9dc3-4cfc-ab89-1f4b74dbcd10',
+  'revision_uid' => 1,
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 1,
+  'comment_count' => 0,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'b:0;',
+  'date' => '2014-06-25 13:02:41 +0000',
+  'alias_url' => 'content/podcast-index',
+);
+  $nodes[] = array(
+  'uid' => 1,
   'title' => '2013. g. novembris',
   'log' => '',
   'status' => 1,
@@ -4257,10 +4507,14 @@ function designssquare_com_site_church_data_assets_uuid_features_default_content
 ',
         'summary' => '',
         'format' => 'filtered_html',
-        'safe_value' => '<p>Vēsture</p>
+        'safe_value' => '<div class="span6">
+<h4>Vēsture</h4>
 <p>1950. gada rudenī Harijs Saukants uzsāka tautas deju grupu ar četriem pāŗiem, kas pirmo reizi uzstājās tā paša gada 18. novembŗa sarīkojumā. Pirmie mēģinājumi notika viņa mājā, jo citur nebija telpu. Drīz dejotāju skaits pieauga, nodibinājās arī draudze, un tās telpās notika turpmākie mēģinājumi. Šī grupa izvēlējās sev nosaukumu „Pērkonītis”.</p>
+</div>
+<div class="span6">
 <p>Pēdējos 63 gadus „Pērkonītis” ir ducinājis un rībinājis tautu istabiņās gan tuvumā, gan tālumā. Esam uzstājušies jaunatnes deju svētkos, vairumā Dziesmu svētku ASV un Kanadā, kā arī Latvijā, Esam dejojuši vietējos Minesotas Tautību festivālos un visbiežāk bijušajā Mineapoles Latviešu namā, Ziemsvētku eglītēs un citos latviešu sarīkojumos. Pa šiem gadiem „Pērkonītis” ir rīkojis vairākas sadancošanās, aicinot deju grupas no citām pilsētām. Esam dejojuši arī dažu dejotāju kāzās.</p>
 <p>Gadiem ejot, skaits ir mazliet mainījies, bet gandrīz vienmēr sanākuši vismaz četri pāŗi. Tagad dejo otrā, nu jau trešā paaudze. Ar dažiem pārtraukumiem „Pērkonītis” ir nodzīvojis 63 gadus. Ceram, ka nākamie 63 vai vairāk būs tik pat spoži, ja ne spožāki!</p>
+</div>
 ',
         'safe_summary' => '',
       ),
@@ -4442,6 +4696,87 @@ function designssquare_com_site_church_data_assets_uuid_features_default_content
   'data' => 'b:0;',
   'date' => '2014-06-22 20:51:58 +0000',
   'alias_url' => 'content/newsletter-2',
+);
+  $nodes[] = array(
+  'uid' => 1,
+  'title' => 'Spredika Indeks',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => 'a1da29f5-0fe5-448b-9eba-e3356bf077df',
+  'type' => 'ds_podcast_index',
+  'language' => 'und',
+  'created' => 1405117400,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => 'f7030a0a-b7ce-4073-aa56-a00705a13cd2',
+  'revision_uid' => 1,
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 1,
+  'comment_count' => 0,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'b:0;',
+  'date' => '2014-07-11 22:23:20 +0000',
+  'alias_url' => 'latviešu-baznīcas-minesota-spredikis',
 );
   $nodes[] = array(
   'uid' => 1,

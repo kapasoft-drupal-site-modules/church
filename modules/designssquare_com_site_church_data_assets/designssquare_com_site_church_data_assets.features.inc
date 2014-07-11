@@ -400,6 +400,13 @@ function designssquare_com_site_church_data_assets_ctools_plugin_api($module = N
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function designssquare_com_site_church_data_assets_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_menu_alias_default_settings().
  */
 function designssquare_com_site_church_data_assets_menu_alias_default_settings() {
