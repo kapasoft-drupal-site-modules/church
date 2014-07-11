@@ -262,6 +262,11 @@ function designssquare_com_site_church_configurations_data_structures_context_de
         'node_form' => '1',
       ),
     ),
+    'path' => array(
+      'values' => array(
+        'ds-gallery' => 'ds-gallery',
+      ),
+    ),
   );
   $context->reactions = array(
     'block' => array(
@@ -462,6 +467,11 @@ function designssquare_com_site_church_configurations_data_structures_context_de
       ),
       'options' => array(
         'node_form' => '0',
+      ),
+    ),
+    'path' => array(
+      'values' => array(
+        'ds-podcast' => 'ds-podcast',
       ),
     ),
   );
