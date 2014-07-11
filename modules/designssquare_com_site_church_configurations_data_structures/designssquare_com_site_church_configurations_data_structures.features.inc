@@ -1185,31 +1185,3 @@ $strongarm_override[] = array(
 );
 return $strongarm_override;
 }
-
-/**
- * Implements hook_variable_assets_default_settings().
- */
-function designssquare_com_site_church_configurations_data_structures_variable_assets_default_settings() {
-$variable_assets = array();
-
-$variable_assets = array(
-  'ds_theme_custom_background' => array(
-    'fid' => 199,
-    'uid' => 1,
-    'filename' => '010_v2.jpg',
-    'uri' => 'public://designssquare_com/theme/espresso/theme-settings/010_v2_0.jpg',
-    'filemime' => 'image/jpeg',
-    'filesize' => 437413,
-    'status' => 1,
-    'timestamp' => 1404870547,
-    'type' => 'image',
-    'uuid' => '46e98433-11e4-48d8-a3b3-bde453428f0d',
-    'rdf_mapping' => array(),
-    'image_dimensions' => array(
-      'width' => 1600,
-      'height' => 1066,
-    ),
-  ),
-);
-return $variable_assets;
-}
