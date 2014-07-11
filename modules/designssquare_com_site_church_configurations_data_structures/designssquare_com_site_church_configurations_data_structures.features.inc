@@ -736,6 +736,337 @@ function designssquare_com_site_church_configurations_data_structures_views_api(
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function designssquare_com_site_church_configurations_data_structures_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: ds_blog_img_post_big.
+  $styles['ds_blog_img_post_big'] = array(
+    'name' => 'ds_blog_img_post_big',
+    'label' => 'DS Image Post Teaser Big',
+    'effects' => array(
+      7 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 780,
+          'height' => 468,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_blog_img_post_slider.
+  $styles['ds_blog_img_post_slider'] = array(
+    'name' => 'ds_blog_img_post_slider',
+    'label' => 'DS Image Post Teaser Slider',
+    'effects' => array(
+      8 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 1,
+          'height' => 150,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_blog_img_post_small.
+  $styles['ds_blog_img_post_small'] = array(
+    'name' => 'ds_blog_img_post_small',
+    'label' => 'DS Img Post Teaser Small',
+    'effects' => array(
+      6 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 370,
+          'height' => 222,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_blog_video_post_big.
+  $styles['ds_blog_video_post_big'] = array(
+    'name' => 'ds_blog_video_post_big',
+    'label' => 'DS Video Post Teaser Big',
+    'effects' => array(
+      6 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 1,
+          'height' => 300,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_blog_video_post_slider.
+  $styles['ds_blog_video_post_slider'] = array(
+    'name' => 'ds_blog_video_post_slider',
+    'label' => 'DS Video Post Teaser Slider',
+    'effects' => array(
+      7 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 1,
+          'height' => 150,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_blog_video_post_small.
+  $styles['ds_blog_video_post_small'] = array(
+    'name' => 'ds_blog_video_post_small',
+    'label' => 'DS Video Post Teaser Small',
+    'effects' => array(
+      4 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 1,
+          'height' => 122,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_blog_vimeo_post_big.
+  $styles['ds_blog_vimeo_post_big'] = array(
+    'name' => 'ds_blog_vimeo_post_big',
+    'label' => 'DS Vimeo Post Teaser Big',
+    'effects' => array(
+      5 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 1,
+          'height' => 1,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_blog_vimeo_post_slider.
+  $styles['ds_blog_vimeo_post_slider'] = array(
+    'name' => 'ds_blog_vimeo_post_slider',
+    'label' => 'DS Vimeo Post Teaser Slider',
+    'effects' => array(
+      9 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 1,
+          'height' => 150,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_blog_vimeo_post_small.
+  $styles['ds_blog_vimeo_post_small'] = array(
+    'name' => 'ds_blog_vimeo_post_small',
+    'label' => 'DS Vimeo Post Teaser Small',
+    'effects' => array(
+      3 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 1,
+          'height' => 1,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_foto_gallery_block.
+  $styles['ds_foto_gallery_block'] = array(
+    'name' => 'ds_foto_gallery_block',
+    'label' => 'DS Foto Gallery Block',
+    'effects' => array(
+      3 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 80,
+          'height' => 52,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_foto_gallery_single.
+  $styles['ds_foto_gallery_single'] = array(
+    'name' => 'ds_foto_gallery_single',
+    'label' => 'DS Foto Gallery Single',
+    'effects' => array(
+      2 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 720,
+          'height' => 467.53,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_foto_gallery_teaser.
+  $styles['ds_foto_gallery_teaser'] = array(
+    'name' => 'ds_foto_gallery_teaser',
+    'label' => 'DS Foto Gallery Teaser',
+    'effects' => array(
+      1 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 245,
+          'height' => 160,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_podcast_block_img.
+  $styles['ds_podcast_block_img'] = array(
+    'name' => 'ds_podcast_block_img',
+    'label' => 'DS Podcast Block Img',
+    'effects' => array(
+      2 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 80,
+          'height' => 52,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: ds_podcast_teaser_img.
+  $styles['ds_podcast_teaser_img'] = array(
+    'name' => 'ds_podcast_teaser_img',
+    'label' => 'DS Podcast Teaser Img',
+    'effects' => array(
+      1 => array(
+        'label' => 'Resize',
+        'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
+        'effect callback' => 'image_resize_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 252,
+          'height' => 164,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function designssquare_com_site_church_configurations_data_structures_node_info() {
@@ -853,4 +1184,51 @@ $strongarm_override[] = array(
   ),
 );
 return $strongarm_override;
+}
+
+/**
+ * Implements hook_variable_assets_default_settings().
+ */
+function designssquare_com_site_church_configurations_data_structures_variable_assets_default_settings() {
+$variable_assets = array();
+
+$variable_assets = array(
+  'ds_about__content_block__image' => array(
+    'fid' => 197,
+    'uid' => 1,
+    'filename' => '09_2010_DagsunEdija.jpg',
+    'uri' => 'public://designssquare_com_theme_blocks/assets/img/09_2010_DagsunEdija.jpg',
+    'filemime' => 'image/jpeg',
+    'filesize' => 403372,
+    'status' => 1,
+    'timestamp' => 1404860078,
+    'type' => 'image',
+    'uuid' => '3bfa8eb0-11b6-4472-802c-4e2c2f7a01d3',
+    'rdf_mapping' => array(),
+    'image_dimensions' => array(
+      'width' => 2352,
+      'height' => 1568,
+    ),
+  ),
+);
+$variable_assets = array(
+  'ds_theme_custom_background' => array(
+    'fid' => 199,
+    'uid' => 1,
+    'filename' => '010_v2.jpg',
+    'uri' => 'public://designssquare_com/theme/espresso/theme-settings/010_v2_0.jpg',
+    'filemime' => 'image/jpeg',
+    'filesize' => 437413,
+    'status' => 1,
+    'timestamp' => 1404870547,
+    'type' => 'image',
+    'uuid' => '46e98433-11e4-48d8-a3b3-bde453428f0d',
+    'rdf_mapping' => array(),
+    'image_dimensions' => array(
+      'width' => 1600,
+      'height' => 1066,
+    ),
+  ),
+);
+return $variable_assets;
 }
