@@ -881,3 +881,31 @@ $strongarm_override[] = array(
 );
 return $strongarm_override;
 }
+
+/**
+ * Implements hook_variable_assets_default_settings().
+ */
+function designssquare_com_site_church_data_assets_variable_assets_default_settings() {
+$variable_assets = array();
+
+$variable_assets = array(
+  'ds_about__content_block__image' => array(
+    'fid' => 197,
+    'uid' => 1,
+    'filename' => '09_2010_DagsunEdija.jpg',
+    'uri' => 'public://designssquare_com_theme_blocks/assets/img/09_2010_DagsunEdija.jpg',
+    'filemime' => 'image/jpeg',
+    'filesize' => 403372,
+    'status' => 1,
+    'timestamp' => 1404860078,
+    'type' => 'image',
+    'uuid' => '3bfa8eb0-11b6-4472-802c-4e2c2f7a01d3',
+    'rdf_mapping' => array(),
+    'image_dimensions' => array(
+      'width' => 2352,
+      'height' => 1568,
+    ),
+  ),
+);
+return $variable_assets;
+}
