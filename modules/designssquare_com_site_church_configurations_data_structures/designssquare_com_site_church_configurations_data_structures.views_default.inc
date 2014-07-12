@@ -1377,9 +1377,10 @@ function designssquare_com_site_church_configurations_data_structures_views_defa
     'ds_gallery' => 'ds_gallery',
   );
 
-  /* Display: Audio Sprediķis- All */
-  $handler = $view->new_display('block', 'Audio Sprediķis- All', 'all');
+  /* Display: Audio Sprediķis */
+  $handler = $view->new_display('block', 'Audio Sprediķis', 'all');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Audio Sprediķis';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '0';

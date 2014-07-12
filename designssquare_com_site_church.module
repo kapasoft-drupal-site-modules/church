@@ -22,6 +22,8 @@ function designssquare_com_site_church_preprocess_block(&$vars){
         case 'block-views-ds-church-blog-categories-b-cat':
         case 'block-views-ds-church-blog-tags-tag':
         case 'block-views-ds-church-newsletter-all-all':
+        case 'block-views-ds-church-podcast-all-all':
+        case 'block-views-ds-church-gallery-all-all':
             $vars['theme_hook_suggestions'][] = 'block__no_wrapper';
             break;
         case 'block-views-calendar-block-1':

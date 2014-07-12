@@ -207,4 +207,5 @@ features_exclude[uuid_term][a738f9a5-fe9c-4724-9ca1-37fd0f1f6cfa] = a738f9a5-fe9
 features_exclude[variable_assets][] = 197
 features_exclude[variable_assets][] = 199
 features_exclude[variable_assets][] = 199
+features_exclude[variable_assets][] = 199
 project path = sites/all/modules/designssquare_com_site_church/modules

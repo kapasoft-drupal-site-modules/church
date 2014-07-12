@@ -466,7 +466,7 @@ function designssquare_com_site_church_configurations_data_structures_context_de
         'ds_podcast_index' => 'ds_podcast_index',
       ),
       'options' => array(
-        'node_form' => '0',
+        'node_form' => '1',
       ),
     ),
     'path' => array(
